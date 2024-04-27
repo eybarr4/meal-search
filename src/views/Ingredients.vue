@@ -11,8 +11,8 @@ onMounted(() => {
 	api.get('list.php?i=list')
         .then(({ data }) => {
 	    ingredients.value = data.meals
-	})
-
+    })
+    
 })
 
 const searchIngredients = computed(() => {
@@ -43,6 +43,6 @@ const searchIngredients = computed(() => {
                     <h3 class="text-2xl font-bold mb-2">{{ ingredient.strIngredient }}</h3>
             </router-link>
         </div>
-        
+
     </div>
 </template>

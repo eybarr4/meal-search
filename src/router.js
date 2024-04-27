@@ -12,7 +12,7 @@ const routes = [
   { path: '/meal-search/', name: 'Home', component: HomePage },
   { path: '/meal-search/by-name/:name?', name: 'MealsByName', component: MealsByName },
   { path: '/meal-search/by-letter/:letter?', name: 'MealsByLetter', component: MealsByLetter },
-  { path: '/meal-search/by-ingredients/:ingredients?', name: 'MealsByIngredients', component: MealsByIngredients },
+  { path: '/meal-search/by-ingredient/:ingredient?', name: 'MealsByIngredients', component: MealsByIngredients },
   { path: '/meal-search/meal/:id', name: 'MealDetails', component: MealDetails },
   { path: '/meal-search/ingredients', name: 'Ingredients', component: Ingredients },
   { path: '/meal-search/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
